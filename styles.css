@@ -1,0 +1,155 @@
+* {
+  
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: #2e2e2e;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background: #a1a1a1;
+    border-radius: 10px;
+}
+  
+body {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #3E3E3E;
+    padding: 10px 30px;
+    border-radius: 0px 0px 20px 20px;
+    color: white;
+    padding-bottom: 0;
+}
+
+header h1 {
+    font-weight: 900;
+}
+  
+a {
+  
+    text-decoration: none;
+  
+}
+  
+button {
+    cursor: pointer;
+    border: none;
+    padding: 5px 40px;
+    background: #1F1F1F;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    transition: 0.4s;
+}
+
+button:hover {
+    background: #575757;
+    font-size: 17px;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a1a1a1;
+    background: #e97373;
+    transition: 1s;
+}
+
+section h1 {
+    background: rgba(31, 31, 31, 0.2);
+    border-radius: 999px;
+    padding: 5px 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+@media(max-width: 1000px) {
+    section h1 {
+        padding: 3px 15px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 850px) {
+
+    header {
+        padding: 0;
+        border-radius: 0px 0px 20px 20px;
+    }
+    
+    header h1 {
+        font-size: 20px;
+        padding: 5px 20px;
+    }
+
+    button {
+        padding: 5px;
+        font-size: 12px;
+        width: 100%;
+        border-radius: 0px 0px 10px 10px;
+    }
+}
+
+@media(max-width: 800px) {
+
+    body {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width: 480px) {
+    
+    body {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 530px) {
+    section {
+        justify-content: flex-end;
+        padding: 0 10px;
+    }
+
+    header {
+        left: 0;
+        transform: translateX(0px);
+    }
+    
+    header h1 {
+        font-size: 16px;
+        padding: 5px 20px;
+    }
+
+    button {
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 0px 0px 10px 0px;
+    }
+}
