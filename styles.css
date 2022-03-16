@@ -124,14 +124,13 @@ section h1 {
     }
 }
 
-@media(max-width: 480px) {
+
+@media(max-width: 530px) {
     
     body {
         grid-template-columns: 1fr;
     }
-}
 
-@media(max-width: 530px) {
     section {
         justify-content: flex-end;
         padding: 0 10px;
